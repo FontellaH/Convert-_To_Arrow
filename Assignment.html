@@ -1,4 +1,4 @@
-< !DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -48,7 +48,7 @@
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             // 2. Updated Arrow Functions
-            document.getElementById("alert".onclick) = () => alert(getValueFormId("paragraph", "blue"));
+            document.getElementById("alert").onclick = () => alert(document.getElementById("popup-input").value);
 
             // document.getElementById("alert").onclick = function () {
             //     alert(document.getElementById("popup-input").value);
@@ -74,12 +74,13 @@
 
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // 5. Updated Arrow Functions
-            const getValueFromId = id => document.getElementById(id).value;
+            const getValueFromId = id => {return document.getElementById(id).value;};
 
 
             // function getValueFromId(id) {
             //     return document.getElementById(id).value;
             // }
+                
 
 
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -94,7 +95,7 @@
 
             //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
             // 7. Updated Arrow Functions
-            const mouseOverFunction = el => el.style = "background-color: black";
+            const mouseOverFunction = el => {el.style = "background-color: black";};
 
 
             // function mouseOverFunction(el) {
